@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textify - Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="file" style="display: none;" accept="image" id="image-input">
+    <main>
+        <section class="grid">
+            <article id="user-input">
+                <textarea id="user-input-textarea" placeholder="Your text here" rows="20" cols="52"></textarea>
+            </article>
+            <article id="user-actions">
+                <h4>Actions</h4>
+                <section>
+                    <div id="rules-type-span">
+                        <span class="grid">
+                            <input type="text" placeholder="from" id="text-from">
+                            <input type="text" placeholder="to" id="text-to">
+                            <div>
+
+                                <span>
+                                    Case
+                                    <input type="checkbox" id="text-keepcase">
+                                </span>
+                                <span>
+                                    word
+                                    <input type="checkbox" name="" id="text-keepword">
+                                </span>
+                            </div>
+                        </span>
+                        <span class="grid">
+                            <button onclick="apply('remove')" style="background-color: rgba(255, 0, 0, 0.685);">🚫remove</button>
+                            <button onclick="apply('replace')" style="background-color: rgba(255, 166, 0, 0.616);">🔃replace</button>
+                            <button onclick="back()" style="background-color: rgb(84, 237, 84);">◀ back</button>
+                        </span>
+                        <span class="grid">
+                            <button onclick="copy()"    style="background-color: rgb(255, 94, 0);">🔗copy</button>
+                            <button onclick="reset()"   style="background-color: rgb(255, 94, 0);">💥reset</button>
+                            <button onclick="clear_()"   style="background-color: rgb(255, 94, 0);">🧹clear</button>
+                        </span>
+                        <span class="grid">
+                            <button style="background-color: white; color: black" onclick="moveCursorToNextOccurence()">⏭Next</button>
+                            <button style="background-color: white; color: black" onclick="moveCursorToPreviousOccurence()">⏮Previous</button>
+                            <button style="background-color: white; color: black" onclick="selectionLength()">🏁selection length</button>
+                        </span>
+                        <span class="grid">
+                            <button  onclick="capitalize_()">🔠uppercase</button>
+                            <button  onclick="lowerize_()">🔡lowercase</button>
+                            <button  onclick="proper_()">📜proper</button>
+                            <button  onclick="random_()">🎲RaNdOm CaSe</button>
+                            <button  onclick="reverse_()">🔀reverse</button>
+                        </span>
+                        <span class="grid">
+                            <button  onclick="dance_()" style="background: linear-gradient(to bottom, #ff0000, #000000);">💃🕺dance</button>
+                            <button  onclick="getFile()" style="background: linear-gradient(to bottom, #c7de12, #0044ff);">📷image</button>
+                            <button  onclick="cameraToAscii()" style="background: linear-gradient(to bottom, #ff9d00, #a70083);">🎥video</button>
+                        
+                        </span>
+                    </div>
+                </section>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <center>
+            <p>copyright reserved &copy; for <a href="http://codeman.gq" target="_blank">Abdulrahman Azmy</a> 2018 - 2023</p>
+        </center>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

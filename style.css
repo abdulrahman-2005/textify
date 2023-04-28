@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+* {
+    font-family: monospace;
+    box-sizing: border-box;
+}
+
+
+main {
+    padding: 1vw !important;
+}
+
+#user-input-textarea {
+    resize: none;
+    height: 90%;
+    font-family:'Source Code Pro', monospace;
+}
+
+
+#rules-type-span button {
+    border: none;
+    outline: none;
+    box-shadow: 5px 5px 0 0 var(--secondary);
+    transition: .5s;
+}
+
+#rules-type-span button:hover {
+    transform: translate(5px, 5px);
+    box-shadow: none;
+    color: black;
+    font-weight: bold;
+}
+
+
+section {
+    padding: .4vw;
+}
+
+input:disabled {
+    user-select: none;
+}
+
+
