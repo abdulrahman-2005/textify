@@ -82,8 +82,13 @@ input:disabled {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 767px) {
     .main-article {
-        height: 40vh;
+        height: 50vh !important;
+    }
+
+    footer {
+        position: absolute;
+        top: 130vh !important;
     }
 }
