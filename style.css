@@ -80,3 +80,10 @@ input:disabled {
     color: transparent;
     margin: 1vw;
 }
+
+
+@media screen and (max-width: 600px) {
+    .main-article {
+        height: 40vh;
+    }
+}
