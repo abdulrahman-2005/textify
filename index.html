@@ -11,19 +11,19 @@
 <body>
     <input type="file" style="display: none;" accept="image" id="image-input">
     <main>
+        <center>
+            <h1 class="h1-header">Welcome to Textify!</h1>
+        </center>
         <section class="grid">
-            <article id="user-input">
+            <article class="main-article" id="user-input">
                 <textarea id="user-input-textarea" placeholder="Your text here" rows="20" cols="52"></textarea>
             </article>
-            <article id="user-actions">
+            <article  class="main-article" id="user-actions">
                 <h4>Actions</h4>
-                <section>
                     <div id="rules-type-span">
-                        <span class="grid">
+                        <div class="rules-span-container">
                             <input type="text" placeholder="from" id="text-from">
                             <input type="text" placeholder="to" id="text-to">
-                            <div>
-
                                 <span>
                                     Case
                                     <input type="checkbox" id="text-keepcase">
@@ -32,37 +32,35 @@
                                     word
                                     <input type="checkbox" name="" id="text-keepword">
                                 </span>
-                            </div>
-                        </span>
-                        <span class="grid">
+                        </div>
+                        <div class="rules-span-container">
                             <button onclick="apply('remove')" style="background-color: rgba(255, 0, 0, 0.685);">🚫remove</button>
                             <button onclick="apply('replace')" style="background-color: rgba(255, 166, 0, 0.616);">🔃replace</button>
                             <button onclick="back()" style="background-color: rgb(84, 237, 84);">◀ back</button>
-                        </span>
-                        <span class="grid">
+                        </div>
+                        <div class="rules-span-container">
                             <button onclick="copy()"    style="background-color: rgb(255, 94, 0);">🔗copy</button>
                             <button onclick="reset()"   style="background-color: rgb(255, 94, 0);">💥reset</button>
                             <button onclick="clear_()"   style="background-color: rgb(255, 94, 0);">🧹clear</button>
-                        </span>
-                        <span class="grid">
+                        </div>
+                        <div class="rules-span-container">
                             <button style="background-color: white; color: black" onclick="moveCursorToNextOccurence()">⏭Next</button>
                             <button style="background-color: white; color: black" onclick="moveCursorToPreviousOccurence()">⏮Previous</button>
-                            <button style="background-color: white; color: black" onclick="selectionLength()">🏁selection length</button>
-                        </span>
-                        <span class="grid">
-                            <button  onclick="capitalize_()">🔠uppercase</button>
-                            <button  onclick="lowerize_()">🔡lowercase</button>
-                            <button  onclick="proper_()">📜proper</button>
-                            <button  onclick="random_()">🎲RaNdOm CaSe</button>
-                            <button  onclick="reverse_()">🔀reverse</button>
-                        </span>
-                        <span class="grid">
+                            <button style="background-color: white; color: black" onclick="selectionLength()">🏁 s-length</button>
+                        </div>
+                        <div class="rules-span-container">
+                            <button  onclick="capitalize_()">🔠 uppercase</button>
+                            <button  onclick="lowerize_()">🔡 lowercase</button>
+                            <button  onclick="proper_()">📜 proper</button>
+                            <button  onclick="random_()">🎲 RaNdOm</button>
+                            <button  onclick="reverse_()">🔀 reverse</button>
+                        </div>
+                        <div class="rules-span-container">
                             <button  onclick="dance_()" style="background: linear-gradient(to bottom, #ff0000, #000000);">💃🕺dance</button>
                             <button  onclick="getFile()" style="background: linear-gradient(to bottom, #c7de12, #0044ff);">📷image</button>
                         
-                        </span>
+                        </div>
                     </div>
-                </section>
             </article>
         </section>
     </main>
